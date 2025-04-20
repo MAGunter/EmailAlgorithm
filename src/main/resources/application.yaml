@@ -1,0 +1,17 @@
+spring:
+  mail:
+    host: ${SMTP_HOST:smtp.pandev.kz}
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
+          timeout: 20000
+          connectiontimeout: 20000
+          writetimeout: 20000
+          readtimeout: 20000
